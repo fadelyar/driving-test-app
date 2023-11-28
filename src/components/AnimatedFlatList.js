@@ -48,7 +48,7 @@ function AnimatedFlatList(props) {
                   maxWidth: "100%",
 
                 }}>
-                <View style={{ marginHorizontal: 10 }}>
+                <View style={{ marginHorizontal: 10, width: '80%' }}>
                   <Text numberOfLines={4} style={{ fontSize: 20, color: returnColor(item)[1] }}>{item}</Text>
                 </View>
                 <View
