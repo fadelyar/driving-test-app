@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FlatList, Text, View, TouchableOpacity } from "react-native";
 import { Button } from "native-base";
 
-const ans = ["A", "B", "C", "D"];
+const ans = ["الف", "ب", "ج", "د"];
 
 function AnimatedFlatList(props) {
   const [correct, setCorrect] = useState("");
@@ -48,7 +48,7 @@ function AnimatedFlatList(props) {
                   maxWidth: "100%",
 
                 }}>
-                <View style={{ marginHorizontal: 10, width: '80%' }}>
+                <View style={{ marginHorizontal: 10, width: "80%" }}>
                   <Text numberOfLines={4} style={{ fontSize: 20, color: returnColor(item)[1] }}>{item}</Text>
                 </View>
                 <View

@@ -21,6 +21,11 @@ export default function HomePage(props) {
     props.navigation.navigate("Quiz", { language: value.toString() });
   };
 
+  const handelLearn = function() {
+    props.navigation.navigate("Learn", { language: value.toString() });
+
+  }
+
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -50,6 +55,9 @@ export default function HomePage(props) {
             setValue={setValue}
             setItems={setItems}
           />
+          <Button style={{ width: "40%", backgroundColor: "rgb(70,155,1)", marginVertical: 5 }} onPress={handelLearn}>
+            START LEARNING
+          </Button>
           <Button style={{ width: "40%", backgroundColor: "rgb(70,155,1)" }} onPress={onClick}>
             START THE QUIZ
           </Button>
