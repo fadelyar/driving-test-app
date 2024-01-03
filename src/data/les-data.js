@@ -916,5 +916,5 @@ export const dariLessons = [
 
 export const data = function(input) {
   if (input === "Dari") return dariLessons;
-  return dariLessons;
+  return pashtoLessons;
 };
